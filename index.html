@@ -1,0 +1,33 @@
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-grid.min.css"> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="todo-container">
+        <div class="todo-header">Todo</div>
+        <form class="todo-form">
+            <input type="text" placeholder="Task" id="taskInput">
+            <input type="date" id="dateInput">
+            <div id="errorMessage" style="display: none; color: red;">Пожалуйста, введите текст и дату задачи!</div>
+            <button type="button" class="todo-form__btn" onclick="addTask()">Add Task</button>
+            <button type="button" id="completeAllButton">Выполнить все</button>
+        </form>
+        <ul class="todo-list" id="taskList"></ul>
+        <div class="todo-footer">
+            <button type="button" id="filterAllButton">Все</button>
+            <button type="button" id="filterCompletedButton">Выполненные</button>
+            <button type="button" id="filterActiveButton">Активные</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
